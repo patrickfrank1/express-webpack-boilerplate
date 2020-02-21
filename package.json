@@ -6,11 +6,11 @@
   "private": true,
   "browser": "./dist/index.html",
   "engines": {
-    "node": "10.18.x"
+    "node": "12.14.x"
   },
   "scripts": {
     "test": "jest",
-    "build:dev": "webpack-dev-server",
+    "build:dev": "webpack-dev-server --open",
     "build:prod": "webpack -p --progress",
     "heroku-postbuild": "webpack -p --progress",
     "start": "node server.js"
