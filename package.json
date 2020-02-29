@@ -1,22 +1,24 @@
 {
   "name": "boilerplate",
   "version": "1.0.0",
-  "description": "Boilerplate setup with webpack, express, babel, eslint",
+  "description": "Boilerplate setup with webpack, express, babel, eslint, jest",
   "main": "server.js",
   "private": true,
   "browser": "./dist/index.html",
   "engines": {
-    "node": "12.14.x"
+    "node": "12.14.x",
+    "npm":"6.13.x"
   },
   "scripts": {
     "test": "jest",
     "build:dev": "webpack-dev-server --open",
     "build:prod": "webpack -p --progress",
-    "heroku-postbuild": "webpack -p --progress",
+    "heroku-postbuild": "webpack -p --progress && rm -rf node_modules",
     "start": "node server.js"
   },
   "repository": {
-    "type": "git"
+    "type": "git",
+    "url": "https://github.com/patrickfrank1/express-webpack-boilerplate"
   },
   "author": "Patrick Frank",
   "license": "MIT",
