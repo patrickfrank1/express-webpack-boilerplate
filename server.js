@@ -4,6 +4,7 @@ var express = require('express');
 var app = express();
 
 app.use(express.static(path.join(__dirname, 'dist')));
+app.use("/docs", express.static(path.join(__dirname, 'documentation')));
 app.set('port', process.env.PORT || 8080);
 
 var server = app.listen(app.get('port'), function() {
