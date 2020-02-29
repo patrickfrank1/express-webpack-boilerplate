@@ -13,7 +13,8 @@
     "test": "jest",
     "build:dev": "webpack-dev-server --open",
     "build:prod": "webpack -p --progress",
-    "heroku-postbuild": "webpack -p --progress && npm prune --production",
+    "heroku-postbuild": "webpack -p --progress && npm run cleanup",
+    "cleanup": "npm prune --production && rm -rf src test *.config.js *.json README.md",
     "start": "node server.js"
   },
   "repository": {
