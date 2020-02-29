@@ -1,5 +1,5 @@
-# express-webpack-babel-eslint-jest-scss
-Boilerplate for development environment with express, webpack, babel, eslint, jest and scss.
+# express-webpack-babel-eslint-jsdoc-jest-scss
+Boilerplate for development environment with express, webpack, babel, eslint, jsdoc jest and scss.
 See it live at https://express-webpack-boilerplate.herokuapp.com/.
 
 
@@ -34,6 +34,8 @@ Directories:
 - src: contains all the source files, subfolders for js, css, img and external ressources
 - test: files to test your code
 - dist: production files served with server.js in root directory
+- documentation: jsdoc files reside in this directory
+- coverage: as constructed by jest
 
 ESLint:
 - extends airbnb style guide
