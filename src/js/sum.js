@@ -1,3 +1,8 @@
+/**
+ * Compute the sum of two numbers.
+ * @param {number} a First number
+ * @param {number} b Secund number
+ */
 const sum = (a, b) => {
   return a + b;
 };
