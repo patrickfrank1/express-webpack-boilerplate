@@ -12,7 +12,7 @@
   "scripts": {
     "test": "jest",
     "build:dev": "webpack-dev-server --open",
-    "build:docs": "rm -rf documentation && ./node_modules/.bin/jsdoc -c jsdoc.conf.js",
+    "build:docs": "rm -rf documentation && ./node_modules/.bin/jsdoc -c jsdoc.config.js",
     "build:prod": "rm -rf dist && webpack -p --progress",
     "heroku-postbuild": "webpack -p --progress && npm run build:docs && npm run cleanup",
     "cleanup": "npm prune --production && rm -rf src test *.config.js README.md",
