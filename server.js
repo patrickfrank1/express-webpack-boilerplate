@@ -1,12 +1,14 @@
-var path = require('path');
-var express = require('express');
+const path = require('path');
+const express = require('express');
 
-var app = express();
+const app = express();
 
 app.use(express.static(path.join(__dirname, 'dist')));
-app.use("/docs", express.static(path.join(__dirname, 'documentation')));
+app.use('/docs', express.static(path.join(__dirname, 'documentation')));
 app.set('port', process.env.PORT || 8080);
 
-var server = app.listen(app.get('port'), function() {
+/*
+const server = app.listen(app.get('port'), () => {
   console.log('listening on port ', server.address().port);
 });
+*/
