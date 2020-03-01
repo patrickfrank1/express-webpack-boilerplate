@@ -2,8 +2,8 @@
   "name": "boilerplate",
   "version": "1.0.0",
   "description": "Boilerplate setup with webpack, express, babel, eslint, jest",
-  "main": "server.js",
   "private": true,
+  "main": "server.js",
   "browser": "./dist/index.html",
   "engines": {
     "node": "12.14.x",
@@ -15,7 +15,7 @@
     "build:docs": "rm -rf documentation && ./node_modules/.bin/jsdoc -c jsdoc.config.js",
     "build:prod": "rm -rf dist && webpack -p --progress",
     "heroku-postbuild": "webpack -p --progress && npm run build:docs && npm run cleanup",
-    "cleanup": "npm prune --production && rm -rf src test *.config.js README.md",
+    "cleanup": "npm prune --production && rm -rf src test .eslintrc.js *.config.js README.md",
     "start": "node server.js"
   },
   "repository": {
