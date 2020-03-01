@@ -10,19 +10,15 @@ See it live at https://express-webpack-boilerplate.herokuapp.com/.
 git clone git@github.com:patrickfrank1/express-webpack-babel-eslint-jest-scss.git
 cd express-webpack-babel-eslint-jest-scss
 ```
-2. Initialise npm
-``` bash
-npm init -y
-```
-3. Install dependencies from package.json
+2. Install dependencies from package.json
 ``` bash
 npm i
 ```
-4a. Run development server
+3a. Run development server
 ``` bash
 npm run build:dev
 ```
-4b. Serve with express server in production
+3b. Serve with express server in production
 ``` bash
 npm run build:prod
 npm run start
